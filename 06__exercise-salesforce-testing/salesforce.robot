@@ -276,7 +276,7 @@ upload File
     ClickText                   Files (0)
     ClickText                   Add Files
     UseModal                    On
-    UploadFile                  Upload Files    06__exercise-salesforce-testing/test.pdf
+    UploadFile                  Upload Files                06__exercise-salesforce-testing/test.pdf
     ClickText                   Upload Files
     UseModal                    Off
     UseModal                    On
