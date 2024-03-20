@@ -284,3 +284,5 @@ upload File
     ClickText                   Done
     UseModal                    Off
     VerifyText                  test
+    Log Variables                ${EXECDIR}
+    Log Variables                ${CURDIR}
