@@ -12,7 +12,7 @@ Suite Teardown                  Close All Browser Sessions
 
 *** Test Cases ***
 Exercise 6 - Entering A Lead Tina Smith
-    [tags]                      Lead    Regression
+    [tags]                      Lead                        Regression
     Appstate                    Home
     Launch App                  Sales
     ClickText                   Leads
@@ -126,11 +126,11 @@ Download and save SF Dasboard report02
     Sleep                       2s
     GoTo                        file://${file_path}
     LogScreenshot
-    # VerifyText                  Key Performance Indicators                        timeout=2
-    Move File                   ${file_path}                  ${OUTPUT_DIR}
+    # VerifyText                Key Performance Indicators                              timeout=2
+    Move File                   ${file_path}                ${OUTPUT_DIR}
     Sleep                       2s
     @{downloads}=               List Files In Directory     ${OUTPUT_DIR}
-    ${downloaded_file}=         Get From List               ${downloads}    1
+    ${downloaded_file}=         Get From List               ${downloads}                1
     Log to console              Downloaded Filename: ${downloaded_file}
     LogScreenshot
 Download and save SF Dasboard report
@@ -157,7 +157,7 @@ Download and save SF Dasboard report
     Sleep                       2s
     GoTo                        file://${EXECDIR}/../../Downloads/${downloaded_file}
     LogScreenshot
-    # VerifyText                  Key Performance Indicators                        timeout=2
+    # VerifyText                Key Performance Indicators                              timeout=2
     Move File                   ${downloads_folder}/${downloaded_file}                  ${OUTPUT_DIR}
     Sleep                       2s
     @{outputs}=                 List Files In Directory     ${OUTPUT_DIR}
@@ -268,3 +268,18 @@ Download and save SF report02_Latest
     #                           Sleep                       2s
     #                           List Files In Directory     ${OUTPUT_DIR}
     #                           LogScreenshot
+
+upload File
+
+    ClickText                   Opportunities
+    ClickText                   salesforce.com - 270 Widgets (Sample)
+    ClickText                   Files (0)
+    ClickText                   Add Files
+    UseModal                    On
+    ClickText                   Upload Files
+    UseModal                    Off
+    UseModal                    On
+    VerifyText                  Upload Files
+    ClickText                   Done
+    UseModal                    Off
+    VerifyText                  test
