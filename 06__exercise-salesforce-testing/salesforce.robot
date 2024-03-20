@@ -11,7 +11,7 @@ Suite Teardown                  Close All Browser Sessions
 
 *** Variables ***
 ${file_to_upload}    test.pdf    # Replace 'example.pdf' with your actual file name
-${upload_button_text}    Upload File    # Replace 'Upload File' with the actual text or locator of your upload button
+${upload_button_text}    Upload Files    # Replace 'Upload File' with the actual text or locator of your upload button
 
 *** Test Cases ***
 Exercise 6 - Entering A Lead Tina Smith
