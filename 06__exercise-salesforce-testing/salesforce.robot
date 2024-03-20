@@ -289,3 +289,6 @@ upload File
     VerifyText                  test
     Log Variables                ${EXECDIR}
     Log Variables                ${CURDIR}
+    ${current_dir}=    Get File Text    ${EXECDIR}/${file_to_upload}    # Set the base path to your file's directory
+    Use File    ${current_dir}
+    Upload File    ${upload_button_text}    ${file_to_upload}
