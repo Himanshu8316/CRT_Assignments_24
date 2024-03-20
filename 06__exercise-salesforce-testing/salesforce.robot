@@ -279,16 +279,13 @@ upload File
     ClickText                   Files (0)
     ClickText                   Add Files
     UseModal                    On
-    # UploadFile                  Upload Files                /test.pdf
-    # ClickText                   Upload Files
-    # UseModal                    Off
-    # UseModal                    On
-    # VerifyText                  Upload Files
-    # ClickText                   Done
-    # UseModal                    Off
-    # VerifyText                  test
-    # Log Variables                ${EXECDIR}
-    # Log Variables                ${CURDIR}
-    ${current_dir}=    Get File Text    ${EXECDIR}/test.pdf    # Set the base path to your file's directory
-    Use File    ${current_dir}
-    Upload File    ${upload_button_text}    ${file_to_upload}
+    UploadFile                  Upload Files                /test.pdf
+    ClickText                   Upload Files
+    UseModal                    Off
+    UseModal                    On
+    VerifyText                  Upload Files
+    ClickText                   Done
+    UseModal                    Off
+    VerifyText                  test
+    Log Variables                ${EXECDIR}
+    Log Variables                ${CURDIR}
