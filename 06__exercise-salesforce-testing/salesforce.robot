@@ -275,7 +275,7 @@ upload File
     ClickText                   Files (0)
     ClickText                   Add Files
     UseModal                    On
-    UploadFile                  Upload Files                /test.pdf
+    UploadFile                  Upload Files                ${EXECDIR}/test.pdf
     ClickText                   Upload Files
     UseModal                    Off
     UseModal                    On
