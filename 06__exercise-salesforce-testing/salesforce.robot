@@ -270,7 +270,7 @@ Download and save SF report02_Latest
     #                           LogScreenshot
 
 upload File
-
+    Appstate                    Home
     ClickText                   Opportunities
     ClickText                   salesforce.com - 270 Widgets (Sample)
     ClickText                   Files (0)
