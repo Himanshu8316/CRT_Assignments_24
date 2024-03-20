@@ -275,6 +275,7 @@ upload File
     ClickText                   Files (0)
     ClickText                   Add Files
     UseModal                    On
+    Log Variables               ${EXECDIR}
     UploadFile                  Upload Files                ${EXECDIR}/test.pdf
     ClickText                   Upload Files
     UseModal                    Off
@@ -283,5 +284,5 @@ upload File
     ClickText                   Done
     UseModal                    Off
     VerifyText                  test
-    Log Variables                ${EXECDIR}
-    Log Variables                ${CURDIR}
+    Log Variables               ${EXECDIR}
+    Log Variables               ${CURDIR}
