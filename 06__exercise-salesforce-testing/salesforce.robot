@@ -276,6 +276,7 @@ upload File
     ClickText                   Files (0)
     ClickText                   Add Files
     UseModal                    On
+    UploadFile                  Upload Files
     ClickText                   Upload Files
     UseModal                    Off
     UseModal                    On
