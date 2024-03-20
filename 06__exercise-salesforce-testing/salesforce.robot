@@ -275,8 +275,7 @@ upload File
     ClickText                   Files (0)
     ClickText                   Add Files
     UseModal                    On
-    # UploadFile                  //button[@class\="slds-button slds-button--neutral attachButton slds-button slds-button-neutral slds-truncate uiButton"]                ${EXECDIR}/test.pdf
-    UploadFile                  add                ${EXECDIR}/test.pdf
+    UploadFile                  //button[@class\="slds-button slds-button--neutral attachButton slds-button slds-button-neutral slds-truncate uiButton"]                ${EXECDIR}/test.pdf
     UseModal                    Off
     UseModal                    On
     VerifyText                  Upload Files
