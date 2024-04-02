@@ -33,6 +33,7 @@ Suite Teardown             CloseAllBrowsers
 
 Enrich lead
     [Tags]                 ready
+    Set Library Search Order    QWeb                        QVision
     Login
     ClickText              Leads
     VerifyText             Recently Viewed
